@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="#21173E"
-    android:backgroundTint="#101322"
+    android:background="#242734"
+    android:backgroundTint="#242734"
     tools:context=".principalActivity">
 
     <ImageView
@@ -18,11 +18,12 @@
         tools:layout_editor_absoluteY="42dp" />
 
     <SearchView
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="199dp"
+        android:layout_height="53dp"
+        android:background="#424657"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.06" />
