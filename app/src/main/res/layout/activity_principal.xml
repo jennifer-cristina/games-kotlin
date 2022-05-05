@@ -1,31 +1,366 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="#242734"
-    android:backgroundTint="#242734"
+    android:orientation="vertical"
     tools:context=".principalActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="49dp"
-        app:srcCompat="@drawable/perfil"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="42dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
 
-    <SearchView
-        android:layout_width="199dp"
-        android:layout_height="53dp"
-        android:background="#424657"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/profile"
+            tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/border"
+            android:drawableRight="@drawable/search"
+            android:hint="Search..."
+            android:textColor="#BBBBBB" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/turret_road_bold"
+        android:text="New and trending"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/border_card"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/image" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:text="Contra III: The Alien Wars"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/nintendo" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/windows_client" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/android_os" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="90dp"
+                        android:background="@drawable/border_button"
+                        android:fontFamily="@font/turret_road_bold"
+                        android:text="Watch"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/border_card"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/image" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:text="Contra III: The Alien Wars"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/nintendo" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/windows_client" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/android_os" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="90dp"
+                        android:background="@drawable/border_button"
+                        android:fontFamily="@font/turret_road_bold"
+                        android:text="Watch"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/border_card"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="140dp"
+                    android:background="@drawable/image" />
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:text="Contra III: The Alien Wars"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/nintendo" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/windows_client" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/android_os" />
+
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="90dp"
+                        android:background="@drawable/border_button"
+                        android:fontFamily="@font/turret_road_bold"
+                        android:text="Watch"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/turret_road_bold"
+        android:text="Best of the year"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/the_witcher"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/witcher" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="13dp"
+                    android:text="The Witcher"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/portal" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="13dp"
+                    android:text="Portal"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/god_of_war" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="13dp"
+                    android:text="God of War"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/witcher" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="13dp"
+                    android:text="The Witcher"
+                    android:fontFamily="@font/turret_road_bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="6dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
