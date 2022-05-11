@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242734"
+    android:orientation="vertical"
+    tools:context=".detalhesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:text="View Game"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/turret_road_bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="50dp"
+            android:gravity="center"
+            android:background="#424657">
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/seta"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center">
+        
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/god_of_war_2"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="18dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/turret_road_bold"
+            android:text="God of War: Ascencion"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="18dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/turret_road_bold"
+            android:text="This prequel to the very first game in the God of War series and the seventh game in the franchise. It is exclusive for the Sony PlayStation 3 console. The game still uses the ancient Greek mythology as visual inspiration and the primary storysource. The player takes control over the warrior Kratos. At the beginning of the game, the protagonist was imprisoned after he violated the blood oath given to the god of war Ares. "/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/nintendo" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/windows_client" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/android_os" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="200dp"
+            android:background="@drawable/border_button"
+            android:fontFamily="@font/turret_road_bold"
+            android:text="Watch"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
