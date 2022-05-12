@@ -14,12 +14,19 @@
         android:layout_marginTop="30dp"
         android:gravity="center">
 
-        <ImageView
-            android:id="@+id/profile"
+        <androidx.cardview.widget.CardView
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:src="@drawable/profile"
-            tools:ignore="MissingConstraints" />
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/profile"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.cardview.widget.CardView>
 
 
         <EditText
